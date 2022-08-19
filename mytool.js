@@ -1,11 +1,10 @@
 function something(x, y) {
-    if (x=="0"){
+    if (x == "0") {
         return {
             x: 0
         }
-    }else
-    {
+    } else {
         z = x + y;
-        return z ;
+        return z;
     }
 }
