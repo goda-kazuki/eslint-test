@@ -1,10 +1,4 @@
 {
-  "env": {
-    "es2022": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 13
-  },
   "rules": {
     "block-spacing": 2,
     "camelcase": 2,
@@ -37,6 +31,10 @@
       "never"
     ],
     "space-infix-ops": 2,
+    "strict": [
+      2,
+      "function"
+    ],
     "wrap-iife": [
       2,
       "any"
