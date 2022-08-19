@@ -1,7 +1,7 @@
 name: reviewdog
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [ opened, synchronize ]
 jobs:
   eslint:
     name: eslint
@@ -13,7 +13,7 @@ jobs:
       - name: eslint review
         uses: reviewdog/action-eslint@v1
         with:
-          github_token: ${{ secrets.secret_token }}
+          github_token: ${{ secrets.SECRET_TOKEN }}
           reporter: github-pr-review
           eslint_flags: './**/*.{vue,ts,js}'
       - name: eslint
