@@ -13,7 +13,7 @@ jobs:
       - name: eslint review
         uses: reviewdog/action-eslint@v1
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.secret_token }}
           reporter: github-pr-review
           eslint_flags: './**/*.{vue,ts,js}'
       - name: eslint
